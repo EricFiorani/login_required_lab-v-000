@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  before_action :require_login
+  
   def new
   end
 
@@ -6,4 +8,5 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+  end
 end
