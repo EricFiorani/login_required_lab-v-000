@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'application#hello'
   get '/login' => 'sessions#new'
-  
+  get '/big_secret' => 'secrets#show'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
